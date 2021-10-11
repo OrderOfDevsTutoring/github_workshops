@@ -1,5 +1,5 @@
 def logger(text: str):
-    print(f'Logger: {text}')
+    print(f'lolz ale fajny tekst: {text}')
 
 
 class IFactory:
@@ -7,5 +7,5 @@ class IFactory:
 
 
 class HelloWorldFactory(IFactory):
-    def execute(self):
-        print("Hello world")
+    def implement(self):
+        print("Hello Hello")
