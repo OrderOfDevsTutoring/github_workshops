@@ -1,11 +1,22 @@
-def logger(text: str):
-    print(f'Logger: {text}')
+from typing import Protocol
 
 
-class IFactory:
+class Logger:
+    def info(self, text: str):
+        print(f'Logger: {text}')
+
+
+class Factory(Protocol):
     pass
 
 
-class HelloWorldFactory(IFactory):
+logger = Logger()
+
+
+class HelloWorld(Factory):
     def execute(self):
-        print("Hello world")
+        logger.info('HelloWorld')
+        print('Hello world')
+
+
+HelloWorld().execute()
