@@ -7,4 +7,5 @@ class IFactory:
 
 
 class HelloWorldFactory(IFactory):
-    pass
+    def execute(self):
+        print("Hello world")
