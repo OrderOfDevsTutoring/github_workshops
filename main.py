@@ -1,6 +1,10 @@
 from typing import Protocol
 
 
+def logger(text: str):
+    print(f'lolz ale fajny tekst: {text}')
+
+
 class Logger:
     def info(self, text: str):
         print(f'Logger: {text}')
